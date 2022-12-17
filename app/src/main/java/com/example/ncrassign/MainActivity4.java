@@ -2,7 +2,6 @@ package com.example.ncrassign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -27,20 +26,20 @@ public class MainActivity4 extends AppCompatActivity {
         String gender = extras.getString("GENDER");
         String address = extras.getString("ADDRESS");
 
-        info1.setText(name+"\n"+dob+"\n"+gender+"\n"+address);
+        info1.setText("Name : "+name+"\n"+"BirthDate : "+ dob+"\n"+"Gender : "+gender+"\n"+"Address : "+address);
 
         String Qualification = extras.getString("Qualification");
         String percentage = extras.getString("Percentage");
         System.out.println(percentage);
         String College = extras.getString("College");
 
-        info2.setText(Qualification+"\n"+percentage+"\n"+College);
+        info2.setText("Graduation : "+Qualification+"\n"+"Percentage : "+percentage+"\n"+" College : "+College);
 
         String ts = extras.getString("Technology Skills");
         String pl = extras.getString("Programming Skills");
         String es = extras.getString("ExtraSkills");
 
-        info3.setText(ts+"\n"+pl+"\n"+es);
+        info3.setText("Technical Skills :" +ts+"\n"+"Programming Languages : "+pl+"\n"+ "Other Skills : "+es);
 
     }
 }
