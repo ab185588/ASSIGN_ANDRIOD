@@ -18,14 +18,6 @@ public class MainActivity3 extends AppCompatActivity {
 
         Button bp = findViewById(R.id.act3_prev);
 
-        EditText ets = findViewById(R.id.act_3_Technologies);
-        EditText epl = findViewById(R.id.act_3_lang);
-        EditText ees = findViewById(R.id.act3_extraSkills);
-
-        String ts = ets.getText().toString();
-        String pl = epl.getText().toString();
-        String es = ees.getText().toString();
-
 
 
         bp.setOnClickListener(new View.OnClickListener() {
@@ -40,11 +32,22 @@ public class MainActivity3 extends AppCompatActivity {
         bn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), MainActivity4.class);
                 Bundle extras = getIntent().getExtras();
+
+
+                EditText ets = findViewById(R.id.act_3_Technologies);
+                EditText epl = findViewById(R.id.act_3_lang);
+                EditText ees = findViewById(R.id.act3_extraSkills);
+
+                String ts = ets.getText().toString();
+                String pl = epl.getText().toString();
+                String es = ees.getText().toString();
+
+
+                Intent i = new Intent(getApplicationContext(), MainActivity4.class);
                 i.putExtras(extras);
                 i.putExtra("Technology Skills",ts);
-                i.putExtra("Programming Languages",pl);
+                i.putExtra("Programming Skills",pl);
                 i.putExtra("ExtraSkills",es);
                 startActivity(i);
             }

@@ -19,21 +19,23 @@ public class MainActivity extends AppCompatActivity {
         ActionBar ab =  getSupportActionBar();
         ab.setTitle("MYAPP_NCR");
 
-        EditText ename = (EditText) findViewById(R.id.act_1_name);
-        EditText edob = (EditText)findViewById(R.id.act_1_dob);
-        EditText egender = (EditText)findViewById(R.id.act_1_gender);
-        EditText eaddress = (EditText)findViewById(R.id.act_1_Address);
 
-
-        String name = ename.getText().toString();
-        String dob = edob.getText().toString();
-        String gender = egender.getText().toString();
-        String address = eaddress.getText().toString();
 
         Button b = findViewById(R.id.act_1_btn);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                EditText ename = (EditText) findViewById(R.id.act_1_name);
+                EditText edob = (EditText)findViewById(R.id.act_1_dob);
+                EditText egender = (EditText)findViewById(R.id.act_1_gender);
+                EditText eaddress = (EditText)findViewById(R.id.act_1_Address);
+
+
+                String name = ename.getText().toString();
+                String dob = edob.getText().toString();
+                String gender = egender.getText().toString();
+                String address = eaddress.getText().toString();
 
                 Intent i = new Intent(getApplicationContext(),MainActivity2.class);
                 i.putExtra("NAME",name);

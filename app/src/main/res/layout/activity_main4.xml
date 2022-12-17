@@ -8,13 +8,26 @@
     android:padding="36dp"
     android:orientation="vertical"
     tools:context=".MainActivity4">
+
         <TextView
-            android:id="@+id/act1"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp"
+            android:text="Personal" />
+
+        <TextView
+            android:id="@+id/act1"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
-            android:drawableBottom="@color/cardview_shadow_end_color"/>
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education" />
+
         <TextView
             android:id="@+id/act2"
             android:layout_width="match_parent"
@@ -22,14 +35,21 @@
             android:padding="12dp"
             android:layout_marginBottom="32dp"
 
-            android:drawableBottom="@color/cardview_shadow_end_color"/>
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills" />
+
         <TextView
             android:id="@+id/act3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:layout_marginBottom="32dp"
-            android:drawableBottom="@color/cardview_shadow_end_color"/>
+            />
 
 
 

@@ -2,6 +2,7 @@ package com.example.ncrassign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -9,6 +10,7 @@ import android.widget.TextView;
 public class MainActivity4 extends AppCompatActivity {
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -34,7 +36,7 @@ public class MainActivity4 extends AppCompatActivity {
 
         info2.setText(Qualification+"\n"+percentage+"\n"+College);
 
-        String ts = extras.getString("Technological Skills");
+        String ts = extras.getString("Technology Skills");
         String pl = extras.getString("Programming Skills");
         String es = extras.getString("ExtraSkills");
 

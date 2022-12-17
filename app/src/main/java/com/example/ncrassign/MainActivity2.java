@@ -18,14 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        EditText equalification = findViewById(R.id.act_2_qualification);
-        EditText epercentage = findViewById(R.id.act_2_percentage);
-        EditText ecollege = findViewById(R.id.act_2_college);
 
-
-        String Qualification = equalification.getText().toString();
-        String percentage = epercentage.getText().toString();
-        String college = ecollege.getText().toString();
 
 
 
@@ -41,8 +34,18 @@ public class MainActivity2 extends AppCompatActivity {
         bn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), MainActivity3.class);
                 Bundle extras = getIntent().getExtras();
+
+                EditText equalification = findViewById(R.id.act_2_qualification);
+                EditText epercentage = findViewById(R.id.act_2_percentage);
+                EditText ecollege = findViewById(R.id.act_2_college);
+
+
+                String Qualification = equalification.getText().toString();
+                String percentage = epercentage.getText().toString();
+                String college = ecollege.getText().toString();
+
+                Intent i = new Intent(getApplicationContext(), MainActivity3.class);
                 i.putExtra("Qualification",Qualification);
                 i.putExtra("Percentage",percentage);
                 i.putExtra("College",college);
